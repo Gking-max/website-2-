@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fundamentals of Computing</title>
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;500;700&display=swap" rel="stylesheet">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/5.3.0/css/bootstrap.min.css">
+
+    <style>
+        body {
+            font-family: 'Montserrat', sans-serif;
+            background-color: #1a1a1a; /* Dark background */
+            color: #dcdcdc; /* Light text */
+        }
+
+        /* Navbar */
+        nav {
+            background-color: rgba(0, 123, 255, 0.8); /* Cool semi-transparent blue */
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 1000;
+            padding: 15px 0; /* Increase padding */
+        }
+
+        nav .navbar-nav {
+            display: flex;
+            justify-content: center; /* Center the nav items */
+            align-items: center;
+            gap: 30px; /* Add space between the items */
+        }
+
+        nav a {
+            color: #dcdcdc; /* Light gray links */
+            font-size: 1.3rem; /* Increase font size */
+            font-weight: 500;
+            padding: 10px 20px;
+            text-decoration: none;
+        }
+
+        nav a:hover {
+            background-color: rgba(0, 123, 255, 0.6); /* Darker on hover */
+            border-radius: 5px; /* Rounded corners on hover */
+        }
+
+        /* Header Section */
+        header {
+            background: url('cool.jpg') no-repeat center center/cover;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+        }
+
+        header h1 {
+            color: #f8f9fa; /* White */
+            font-size: 4rem;
+            font-weight: 700;
+            text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.7);
+        }
+
+        header p {
+            color: #f4f4f9;
+            font-size: 1.5rem;
+            margin-top: 20px;
+        }
+
+        /* Main Content */
+        main {
+            padding-top: 120px;
+            margin: 0 auto;
+        }
+
+        .card {
+            background-color: #2a2a2a; /* Dark card background */
+            color: #dcdcdc; /* Light text */
+            border: none;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            margin-bottom: 20px;
+            transition: transform 0.3s;
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+        }
+
+        .card-title {
+            color: rgba(0, 123, 255, 0.8); /* Cool semi-transparent blue for card titles */
+        }
+
+        /* Footer */
+        footer {
+            background-color: rgba(0, 123, 255, 0.8); /* Cool semi-transparent blue */
+            color: #dcdcdc;
+            text-align: center;
+            padding: 20px;
+            margin-top: 50px;
+        }
+
+        footer p {
+            margin: 0;
+        }
+
+        footer a {
+            color: #dcdcdc;
+            margin: 0 10px;
+        }
+
+        footer a:hover {
+            color: #f4f4f9;
+        }
+
+        /* Responsive adjustments */
+        @media (max-width: 768px) {
+            nav .navbar-nav {
+                flex-direction: column; /* Stack items vertically on smaller screens */
+                gap: 15px; /* Smaller gap on mobile */
+            }
+
+            header h1 {
+                font-size: 2.5rem;
+            }
+
+            header p {
+                font-size: 1.2rem;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark">
+        <div class="container">
+            <a class="navbar-brand" href="#">FoC</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Course</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="project.html">Project</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="concepts.html">Concepts</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="database.html">Databases</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="documentation.html">Documentation</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="aboutme.html">Dev Team</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Header -->
+    <header>
+        <div class="container">
+            <h1>Fundamentals of Computing</h1>
+            <p>Your journey to mastering computer science begins here.</p>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="container my-5">
+        <div class="row">
+            <div class="col-lg-8 mx-auto">
+                <div class="card p-4">
+                    <h2 class="card-title">Course Overview</h2>
+                    <p>This course is an introduction to the fundamentals of Computer Science that will provide students with a foundation for future courses in Computer Science.</p>
+                    <p>The course covers topics such as:</p>
+                    <ul>
+                        <li>Computer Architecture</li>
+                        <li>Operating Systems and Networks</li>
+                        <li>Software Development</li>
+                        <li>Data Organization and Visualization</li>
+                        <li>The potential of computing machines</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <p>@ Powered by UB</p>
+        <a href="#">Privacy Policy</a> | 
+        <a href="#">Terms of Service</a>
+    </footer>
+
+    <!-- Bootstrap JS and dependencies -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.3.0/js/bootstrap.min.js"></script>
+</body>
+</html>
